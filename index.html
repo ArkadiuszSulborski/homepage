@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +13,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/scripts.js"> </script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
+
 <body class="body">
-    <header class="header"></header>
-    <h1>Arkadiusz Sulborski</h1>
-    <p>Cześć jestem Arek, mam 31 lat i właśnie zacząłem przygode z JavaScript.</p>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li><a href=#Info>Informacje</a></li>
+            <li><a href=#Zaintersowania>Zainteresowania</a></li>
+            <li><a href=#Projekty>Projekty</a></li>
+            <li><a href=#Info>Informacje</a></li>
+        </ul>
+    </nav>
+    <header id="Info" class="header">
+        <h1>Arkadiusz Sulborski</h1>
+        <p>Cześć jestem Arek, mam 31 lat i właśnie zacząłem przygode z <strong>JavaScript</strong>.</p>
+
+    </header>
     <main class="main"></main>
+    <h2 id="Zaintersowania">Zainteresowania</h2>
     <footer class="footer"></footer>
-    
+
 </body>
+
 </html>
