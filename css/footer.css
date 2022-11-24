@@ -1,0 +1,7 @@
+.footer {
+    color: hsl(284, 15%, 74%);
+    background-color: hsl(0, 38%, 50%);
+    outline: 4px solid;
+    margin: 10px auto;
+    max-width:  500px;
+}
