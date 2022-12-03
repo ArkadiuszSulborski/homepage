@@ -2,11 +2,9 @@
     margin-top: 140px;
     border-bottom: 3px solid black;
 }
-
-.navigation__list::after {
-    display: inline-block;
+.navigation__list {
     color: #000;
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
+    display: inline-block;
+    padding: 20px 3px;
+    list-style-type: none;
 }
