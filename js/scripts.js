@@ -1,18 +1,24 @@
-console.log("Cześć Youcode!")
+{
+    const greetings = () => {
+          console.log("Hello Youcode :)")
+    };
 
-let button = document.querySelector(".js-main__button");
-let body = document.querySelector(".js-body");
-let main__nameTheme = document.querySelector(".js-main__nameTheme");
+    const ChangeBackgroundColor = () => {
+          const body = document.querySelector(".js-body")
+          const themeName = document.querySelector(".js-main__nameTheme")
+    
+          body.classList.toggle("dark")
+          themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
+    };
 
-button.addEventListener("click", () => {
-    body.classList.toggle("dark");
+    const init = () => {
+          const button = document.querySelector(".js-main__button")
 
-    if (body.classList.contains(".dark")) {
-        main__nameTheme.innerText = "jasny";
+          button.addEventListener("click", ChangeBackgroundColor);
+          
+          greetings ();
+          ChangeBackgroundColor ();
+    };
 
-    } else {
-        main__nameTheme.innerText = "ciemniejszy";
-    }
-
-}
-);
+    init ();
+};

@@ -57,5 +57,6 @@
 }
 
 .main__button {
-    margin-top: 40px;
+    margin-top: 10px;
+    outline: 2px solid;
 }
